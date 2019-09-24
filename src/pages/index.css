@@ -2,12 +2,20 @@ html,body {
   width:100vw;
   height: 100vh;
   margin: 0;
+  font-family: 'Spectral', serif !important;
+}
+h1,h2 {
+  font-family: 'Spectral', serif !important;
 }
 #videoBG {
   position:fixed;
   left:0px;
   z-index: -1;
   width: 100%;
+  filter: brightness(50%);
+}
+#picBG {
+  display: none;
 }
 @media (min-aspect-ratio: 16/9) {
   #videoBG {
@@ -25,8 +33,11 @@ html,body {
   #videoBG {
       display: none;
   }
-  body {
-      background: url('/poster.png'); 
-      background-size: cover;
+  #picBG {
+    position:fixed;
+    width: 100%;
+      display: block;
+      z-index: -1;
+      filter: brightness(50%);
   }
 }
