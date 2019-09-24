@@ -3,6 +3,7 @@ html,body {
   height: 100vh;
   margin: 0;
   font-family: 'Spectral', serif !important;
+  overflow: hidden;
 }
 h1,h2 {
   font-family: 'Spectral', serif !important;
