@@ -1,6 +1,10 @@
 exports.handler = function(event, context, callback) {
-  callback(null, {
+  const url = event.queryStringParameters.url;
+
+  console.log(event.queryStringParameters);
+
+  return {
     statusCode: 200,
-    body: "Hello, World"
-  });
+    body: url
+  };
 };
